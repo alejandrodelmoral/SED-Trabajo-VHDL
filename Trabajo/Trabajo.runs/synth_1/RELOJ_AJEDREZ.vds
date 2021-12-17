@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Dec 17 12:32:40 2021
+# Process ID: 1800
+# Current directory: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/synth_1
+# Command line: vivado.exe -log RELOJ_AJEDREZ.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RELOJ_AJEDREZ.tcl
+# Log file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/synth_1/RELOJ_AJEDREZ.vds
+# Journal file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RELOJ_AJEDREZ.tcl -notrace
+Command: synth_design -top RELOJ_AJEDREZ -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2348
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RELOJ_AJEDREZ' [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Trabajo.vhd:48]
+INFO: [Synth 8-3491] module 'divisor_frecuencia' declared at 'C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/divisor_frecuencia.vhd:36' bound to instance 'frecuencia' of component 'divisor_frecuencia' [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Trabajo.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'divisor_frecuencia' [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/divisor_frecuencia.vhd:48]
+	Parameter reloj_interno_valor bound to: 450000000 - type: integer 
+	Parameter divisor_frecuencia_valor bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divisor_frecuencia' (1#1) [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/divisor_frecuencia.vhd:48]
+INFO: [Synth 8-3491] module 'Contador' declared at 'C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:36' bound to instance 'display' of component 'Contador' [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Trabajo.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'Contador' [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:54]
+WARNING: [Synth 8-614] signal 's_segundo_digitos' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 's_segundo_decenas' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 's_minutos_digitos' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 's_minutos_decenas' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 'd_segundo_digitos' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 'd_segundo_decenas' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+WARNING: [Synth 8-614] signal 'd_minutos_digitos' is read in the process but is not in the sensitivity list [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'Contador' (2#1) [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Contador.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'RELOJ_AJEDREZ' (3#1) [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/sources_1/new/Trabajo.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1131.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/constrs_1/imports/PracticasSED/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.srcs/constrs_1/imports/PracticasSED/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1131.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
++---Muxes : 
+	  12 Input    7 Bit        Muxes := 2     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |    21|
+|2     |OBUFT |     7|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1131.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1131.117 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1131.117 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1131.117 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 869ffa3e
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1143.602 ; gain = 12.484
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/synth_1/RELOJ_AJEDREZ.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RELOJ_AJEDREZ_utilization_synth.rpt -pb RELOJ_AJEDREZ_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 17 12:33:25 2021...
