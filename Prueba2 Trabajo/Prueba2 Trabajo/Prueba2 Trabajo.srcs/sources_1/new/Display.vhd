@@ -9,7 +9,7 @@ entity top is
         code    : in  std_logic_vector(3 downto 0);
         digsel  : in  std_logic_vector(3 downto 0);
         AN : out std_logic_vector(3 downto 0); -- Digcontrol
-        segment : out std_logic_vector(6 downto 0)
+        segment : out std_logic_vector(6 downto 0) -- Segmentos display
      );
 end top;
 
@@ -28,6 +28,6 @@ begin
         code => code,
         led => segment
     );
-    digctrl <= not digsel;
+    AN <= not digsel;
     
 end structural;
