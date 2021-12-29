@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 22.12.2021 10:00:00
+-- Create Date: 22.12.2021 10:34:11
 -- Design Name: 
--- Module Name: Inicial - Behavioral
+-- Module Name: decoder - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,11 +31,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Inicial is
+entity decoder is
 --  Port ( );
-end Inicial;
+end decoder;
 
-architecture Behavioral of Inicial is
+architecture Behavioral of decoder is
 
 begin
 

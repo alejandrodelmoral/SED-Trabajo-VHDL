@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec 22 10:09:54 2021
+# Process ID: 16972
+# Current directory: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9780 C:\Users\jacob\Documents\GitHub\SED-Trabajo-VHDL\Prueba2 Trabajo\Prueba2 Trabajo\Prueba2 Trabajo.xpr
+# Log file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/vivado.log
+# Journal file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.xpr}
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new
+file mkdir {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new}
+close [ open {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/Display.vhd} w ]
+add_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/Display.vhd}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sim_1/new/Inicial.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sim_1/new/Inicial.vhd}}
+file delete -force {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sim_1/new/Inicial.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd} w ]
+add_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd}}
+file delete -force {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd}
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+close [ open {C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd} w ]
+add_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Prueba2 Trabajo/Prueba2 Trabajo/Prueba2 Trabajo.srcs/sources_1/new/decoder.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+close_hw_manager
