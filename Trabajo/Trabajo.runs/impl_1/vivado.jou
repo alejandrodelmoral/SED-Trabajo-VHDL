@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Dec 17 12:33:49 2021
-# Process ID: 2940
+# Start of session at: Wed Dec 22 13:17:07 2021
+# Process ID: 5892
 # Current directory: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/impl_1
 # Command line: vivado.exe -log RELOJ_AJEDREZ.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RELOJ_AJEDREZ.tcl -notrace
 # Log file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Trabajo/Trabajo.runs/impl_1/RELOJ_AJEDREZ.vdi

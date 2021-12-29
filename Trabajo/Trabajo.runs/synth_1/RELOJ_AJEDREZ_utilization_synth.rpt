@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Fri Dec 17 12:33:25 2021
+| Date         : Wed Dec 22 13:16:58 2021
 | Host         : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file RELOJ_AJEDREZ_utilization_synth.rpt -pb RELOJ_AJEDREZ_utilization_synth.pb
 | Design       : RELOJ_AJEDREZ

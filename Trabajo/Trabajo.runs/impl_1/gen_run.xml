@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639740819">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1640175366">
   <File Type="ROUTE-PWR" Name="RELOJ_AJEDREZ_power_routed.rpt"/>
   <File Type="PA-TCL" Name="RELOJ_AJEDREZ.tcl"/>
   <File Type="BITSTR-MMI" Name="RELOJ_AJEDREZ.mmi"/>

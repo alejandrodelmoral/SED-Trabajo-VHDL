@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Fri Dec 17 12:35:34 2021
+| Date             : Wed Dec 22 13:18:16 2021
 | Host             : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command          : report_power -file RELOJ_AJEDREZ_power_routed.rpt -pb RELOJ_AJEDREZ_power_summary_routed.pb -rpx RELOJ_AJEDREZ_power_routed.rpx
 | Design           : RELOJ_AJEDREZ
