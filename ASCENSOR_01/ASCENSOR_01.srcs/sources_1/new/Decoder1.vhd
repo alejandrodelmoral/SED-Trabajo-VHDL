@@ -11,7 +11,7 @@ entity Decoder1 is
            boton2 : in STD_LOGIC;
            boton3 : in STD_LOGIC;
            boton4 : in STD_LOGIC;
-           planta_destino : out STD_LOGIC_VECTOR (2 DOWNTO 0));
+           planta_destino1 : out STD_LOGIC_VECTOR (2 DOWNTO 0));
 end Decoder1;
 
 architecture Behavioral of Decoder1 is
@@ -24,13 +24,13 @@ DECODIFICADOR1: PROCESS (clock, boton1, boton2, boton3, boton4)
 		IF clock'event and clock='1' THEN		
 		
 		IF boton1='1' THEN          
-		  planta_destino <= "001";
+		  planta_destino1 <= "001";
 		ELSIF boton2='1' THEN
-		  planta_destino <= "010";
+		  planta_destino1 <= "010";
 		ELSIF boton3='1' THEN
-		  planta_destino <= "011";
+		  planta_destino1 <= "011";
 		ELSIF boton4='1' THEN
-		  planta_destino <= "100";
+		  planta_destino1 <= "100";
 		END IF;
 		
 		END IF;     
