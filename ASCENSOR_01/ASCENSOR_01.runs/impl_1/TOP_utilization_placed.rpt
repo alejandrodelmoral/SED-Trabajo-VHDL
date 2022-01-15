@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Dec 30 18:23:34 2021
+| Date         : Mon Jan 10 12:08:04 2022
 | Host         : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TOP_utilization_placed.rpt -pb TOP_utilization_placed.pb
 | Design       : TOP
@@ -68,8 +68,8 @@ Table of Contents
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 | Slice                                      |   29 |     0 |          0 |     15850 |  0.18 |
-|   SLICEL                                   |   24 |     0 |            |           |       |
-|   SLICEM                                   |    5 |     0 |            |           |       |
+|   SLICEL                                   |   25 |     0 |            |           |       |
+|   SLICEM                                   |    4 |     0 |            |           |       |
 | LUT as Logic                               |   51 |     0 |          0 |     63400 |  0.08 |
 |   using O5 output only                     |   13 |       |            |           |       |
 |   using O6 output only                     |   26 |       |            |           |       |
@@ -78,10 +78,10 @@ Table of Contents
 |   LUT as Distributed RAM                   |    0 |     0 |            |           |       |
 |   LUT as Shift Register                    |    0 |     0 |            |           |       |
 | Slice Registers                            |   67 |     0 |          0 |    126800 |  0.05 |
-|   Register driven from within the Slice    |   55 |       |            |           |       |
-|   Register driven from outside the Slice   |   12 |       |            |           |       |
+|   Register driven from within the Slice    |   54 |       |            |           |       |
+|   Register driven from outside the Slice   |   13 |       |            |           |       |
 |     LUT in front of the register is unused |    7 |       |            |           |       |
-|     LUT in front of the register is used   |    5 |       |            |           |       |
+|     LUT in front of the register is used   |    6 |       |            |           |       |
 | Unique Control Sets                        |    9 |       |          0 |     15850 |  0.06 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
@@ -116,7 +116,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   29 |    28 |          0 |       210 | 13.81 |
+| Bonded IOB                  |   29 |    29 |          0 |       210 | 13.81 |
 |   IOB Master Pads           |   14 |       |            |           |       |
 |   IOB Slave Pads            |   13 |       |            |           |       |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |

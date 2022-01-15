@@ -2,47 +2,13 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:39:35 2021
-# Process ID: 9480
+# Start of session at: Thu Dec 30 18:35:01 2021
+# Process ID: 16000
 # Current directory: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15540 C:\Users\Zheng\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_01\ASCENSOR_01.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2924 C:\Users\Zheng\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_01\ASCENSOR_01.xpr
 # Log file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/vivado.log
 # Journal file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-open_run impl_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1

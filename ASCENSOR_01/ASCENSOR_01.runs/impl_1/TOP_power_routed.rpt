@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Thu Dec 30 18:24:13 2021
+| Date             : Mon Jan 10 12:08:43 2022
 | Host             : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
 | Design           : TOP
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 27.958 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 27.951 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 27.162                           |
+| Dynamic (W)              | 27.154                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.279 |      159 |       --- |             --- |
-|   LUT as Logic |     0.224 |       51 |     63400 |            0.08 |
+| Slice Logic    |     0.276 |      159 |       --- |             --- |
+|   LUT as Logic |     0.220 |       51 |     63400 |            0.08 |
 |   CARRY4       |     0.027 |       13 |     15850 |            0.08 |
 |   Register     |     0.023 |       67 |    126800 |            0.05 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     0.435 |      115 |       --- |             --- |
+| Signals        |     0.431 |      115 |       --- |             --- |
 | I/O            |    26.447 |       29 |       210 |           13.81 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    27.958 |          |           |                 |
+| Total          |    27.951 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.313 |       0.750 |      0.563 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.305 |       0.743 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     1.061 |       0.968 |      0.093 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     7.480 |       7.476 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,14 +138,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| TOP                      |    27.162 |
-|   C_D_1Hz                |     0.167 |
-|   Display_7              |     0.264 |
-|   FSM                    |     0.153 |
+| TOP                      |    27.154 |
+|   C_D_1Hz                |     0.168 |
+|   Display_7              |     0.268 |
+|   FSM                    |     0.151 |
 |   Motor_Ascensor         |     0.004 |
 |   Primer_decodificador_1 |     0.015 |
 |   Primer_decodificador_2 |     0.016 |
-|   Segundo_decodificador  |     0.024 |
+|   Segundo_decodificador  |     0.022 |
 |   Tercer_decodificador   |     0.010 |
 +--------------------------+-----------+
 

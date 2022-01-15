@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Dec 30 18:23:34 2021
+| Date         : Mon Jan 10 12:08:04 2022
 | Host         : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
 | Design       : TOP
@@ -73,9 +73,9 @@ Table of Contents
 +-------------------+--------------------------------------+-----------------------------------+------------------+----------------+--------------+
 |    Clock Signal   |             Enable Signal            |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------+--------------------------------------+-----------------------------------+------------------+----------------+--------------+
-|  C_D_1Hz/clk_sig2 |                                      |                                   |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | FSM/FSM_onehot_state_reg[1]_inv_2    | FSM/FSM_onehot_state_reg[1]_inv_3 |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | FSM/FSM_onehot_state_reg[1]_inv_1[0] | FSM/FSM_onehot_state_reg[2]_0     |                1 |              1 |         1.00 |
+|  C_D_1Hz/clk_sig2 |                                      |                                   |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | Segundo_decodificador//i__n_0        |                                   |                1 |              5 |         5.00 |
 |  clk_IBUF_BUFG    | Tercer_decodificador//i__n_0         |                                   |                2 |              5 |         2.50 |
 |  clk_IBUF_BUFG    | FSM/LED_INDICADOR_LLEGADDA_OBUF      | reset_IBUF                        |                2 |              6 |         3.00 |
