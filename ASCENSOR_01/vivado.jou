@@ -2,43 +2,34 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun Jan 16 20:08:34 2022
-# Process ID: 15928
-# Current directory: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17216 C:\Users\jacob\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_01\ASCENSOR_01.xpr
-# Log file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/vivado.log
-# Journal file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01\vivado.jou
+# Start of session at: Sun Jan 16 19:26:54 2022
+# Process ID: 11644
+# Current directory: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7884 C:\Users\Zheng\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_01\ASCENSOR_01.xpr
+# Log file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/vivado.log
+# Journal file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.xpr
+open_project C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.xpr
 update_compile_order -fileset sources_1
-update_files -from_files C:/Users/jacob/Desktop/ETSIDI/PracticasSED/Nexys4DDR_Master.xdc -to_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/constrs_1/imports/ps4 vc/Nexys-4-DDR-Master.xdc}} -filesets [get_filesets *]
-export_ip_user_files -of_objects  [get_files {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/constrs_1/imports/ps4 vc/Nexys4DDR_Master.xdc}}] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 {{C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/constrs_1/imports/ps4 vc/Nexys4DDR_Master.xdc}}
-add_files -fileset constrs_1 -norecurse C:/Users/jacob/Desktop/ETSIDI/PracticasSED/Nexys4DDR_Master.xdc
-import_files -fileset constrs_1 C:/Users/jacob/Desktop/ETSIDI/PracticasSED/Nexys4DDR_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder3.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder3.vhd
+remove_files  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder3.vhd
+file delete -force C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder3.vhd
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
+launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-export_ip_user_files -of_objects  [get_files C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/constrs_1/imports/PracticasSED/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/constrs_1/imports/PracticasSED/Nexys4DDR_Master.xdc
-add_files -fileset constrs_1 -norecurse C:/Users/jacob/Desktop/ETSIDI/PracticasSED/Nexys4DDR_Master.xdc
-import_files -fileset constrs_1 C:/Users/jacob/Desktop/ETSIDI/PracticasSED/Nexys4DDR_Master.xdc
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
 open_run impl_1
-close_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-open_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

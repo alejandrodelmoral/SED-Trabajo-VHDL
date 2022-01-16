@@ -7,19 +7,19 @@ use IEEE.NUMERIC_STD.ALL;
 library UNISIM;
 use UNISIM.VComponents.all;
 
-entity clock_div_1Hz is
-    Generic (   frec2: integer:=500000  );
+entity clock_div_100Hz is
+    Generic (   frec2: integer:=1000000  );
              
     Port ( clock : in STD_LOGIC;
-           clock_200Hz: out STD_LOGIC);
-end clock_div_1Hz;
+           clock_100Hz: out STD_LOGIC);
+end clock_div_100Hz;
 
-architecture Behavioral of clock_div_1Hz is
+architecture Behavioral of clock_div_100Hz is
 signal clk_sig2: std_logic:= '0';
 
 begin
  
-  RELOJ_200HZ: process (clock)
+  RELOJ_100HZ: process (clock)
   variable cnt1:integer:=0;
   begin
 
@@ -32,7 +32,7 @@ begin
 			end if;
 		end if;
   end process;
-  clock_200Hz<=clk_sig2;
+  clock_100Hz<=clk_sig2;
 
 
 end Behavioral;

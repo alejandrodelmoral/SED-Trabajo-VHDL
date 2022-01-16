@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan 16 20:57:36 2022
-| Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
+| Date         : Sun Jan 16 19:59:15 2022
+| Host         : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TOP_methodology_drc_routed.rpt -pb TOP_methodology_drc_routed.pb -rpx TOP_methodology_drc_routed.rpx
 | Design       : TOP
 | Device       : xc7a100tcsg324-1
@@ -23,173 +23,173 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 67
+             Violations found: 69
 +-----------+------------------+-----------------------------+------------+
 | Rule      | Severity         | Description                 | Violations |
 +-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 67         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 69         |
 +-----------+------------------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[0]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[10]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[11]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[12]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[13]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[14]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[15]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[16]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[17]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[18]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[19]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[1]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[20]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[21]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#15 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[22]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[23]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[24]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#18 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[25]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[26]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[27]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[28]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[29]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[2]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[30]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[31]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[3]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[4]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[5]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[6]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[7]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[8]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin C_D_1Hz/RELOJ_200HZ.cnt1_reg[9]/C is not reached by a timing clock
+The clock pin C_D_1Hz/RELOJ_100HZ.cnt1_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Critical Warning
@@ -204,77 +204,77 @@ Related violations: <none>
 
 TIMING-17#35 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_ACT_reg[0]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_actual_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_ACT_reg[1]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_actual_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#37 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_ACT_reg[2]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_actual_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#38 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_DEST_reg[0]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_destino_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#39 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_DEST_reg[1]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_destino_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#40 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/DIS_DEST_reg[2]/C is not reached by a timing clock
+The clock pin FSM/ASCEN_Planta_destino_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_ACTUAL_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/FSM_onehot_state_reg[1]_inv/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_ACTUAL_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/FSM_onehot_state_reg[2]/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_ACTUAL_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_actuall_reg[0]/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_DESTINO_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_actuall_reg[1]/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_DESTINO_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_actuall_reg[2]/C is not reached by a timing clock
+The clock pin FSM/DISPLAY_DESTINO_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_destinoo_reg[0]/C is not reached by a timing clock
+The clock pin FSM/FSM_onehot_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_destinoo_reg[1]/C is not reached by a timing clock
+The clock pin FSM/FSM_onehot_state_reg[1]_inv/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Critical Warning
 Non-clocked sequential cell  
-The clock pin FSM/planta_destinoo_reg[2]/C is not reached by a timing clock
+The clock pin FSM/FSM_onehot_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Critical Warning
@@ -289,82 +289,92 @@ Related violations: <none>
 
 TIMING-17#52 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_1/planta_destino1_reg[0]/C is not reached by a timing clock
+The clock pin Primer_decodificador_1/Decodificador1_P_D_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_1/planta_destino1_reg[1]/C is not reached by a timing clock
+The clock pin Primer_decodificador_1/Decodificador1_P_D_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_1/planta_destino1_reg[2]/C is not reached by a timing clock
+The clock pin Primer_decodificador_1/Decodificador1_P_D_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_2/planta_destino1_reg[0]/C is not reached by a timing clock
+The clock pin Primer_decodificador_2/Decodificador1_P_D_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_2/planta_destino1_reg[1]/C is not reached by a timing clock
+The clock pin Primer_decodificador_2/Decodificador1_P_D_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Critical Warning
 Non-clocked sequential cell  
-The clock pin Primer_decodificador_2/planta_destino1_reg[2]/C is not reached by a timing clock
+The clock pin Primer_decodificador_2/Decodificador1_P_D_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Critical Warning
 Non-clocked sequential cell  
-The clock pin Segundo_decodificador/pines_display2_reg[0]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Critical Warning
 Non-clocked sequential cell  
-The clock pin Segundo_decodificador/pines_display2_reg[1]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Critical Warning
 Non-clocked sequential cell  
-The clock pin Segundo_decodificador/pines_display2_reg[2]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Critical Warning
 Non-clocked sequential cell  
-The clock pin Segundo_decodificador/pines_display2_reg[4]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Critical Warning
 Non-clocked sequential cell  
-The clock pin Segundo_decodificador/pines_display2_reg[6]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tercer_decodificador/pines_display1_reg[0]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_1_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tercer_decodificador/pines_display1_reg[1]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tercer_decodificador/pines_display1_reg[2]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tercer_decodificador/pines_display1_reg[4]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin Tercer_decodificador/pines_display1_reg[6]/C is not reached by a timing clock
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin Segundo_decodificador/Decodificador2_Display_2_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 
