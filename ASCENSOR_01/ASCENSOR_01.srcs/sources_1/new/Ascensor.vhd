@@ -7,10 +7,10 @@ use IEEE.NUMERIC_STD.ALL;
 entity ASCENSOR is
     Port ( clock : in STD_LOGIC;
            RST: in STD_LOGIC;
-           planta_destino : in STD_LOGIC_VECTOR (2 DOWNTO 0);
-           planta_actual : in STD_LOGIC_VECTOR (2 DOWNTO 0);
-           DIS_DEST: out STD_LOGIC_VECTOR (2 DOWNTO 0);
-           DIS_ACT: out STD_LOGIC_VECTOR (2 DOWNTO 0);
+           ASCENSOR_PLANTA_DESTINO : in STD_LOGIC_VECTOR (2 DOWNTO 0);
+           ASCENSOR_PLANTA_ACTUAL : in STD_LOGIC_VECTOR (2 DOWNTO 0);
+           DISPLAY_DESTINO: out STD_LOGIC_VECTOR (2 DOWNTO 0);
+           DISPLAY_ACTUAL: out STD_LOGIC_VECTOR (2 DOWNTO 0);
            LED_INDICADOR_DE_LLEGADA: out STD_LOGIC;
            LED0: out STD_LOGIC; --led de la puerta, 0 cerrada, 1 abierta
            motor_out : out STD_LOGIC_VECTOR (1 downto 0)
@@ -18,12 +18,12 @@ entity ASCENSOR is
 end ASCENSOR;
 
 architecture Behavioral of ASCENSOR is
-    TYPE state_type IS (S1, S2, S3); --S1 es estado en reposo, S2 subiendo, S3 bajando
+    TYPE state_type IS (E1, E2, E3); --E1 es estado en reposo, E2 subiendo, E3 bajando
     SIGNAL next_state: state_type;
     SIGNAL state: state_type;
-    SIGNAL LED_S1: STD_LOGIC;
-    SIGNAL planta_destinoo: INTEGER ;
-    SIGNAL planta_actuall: INTEGER;
+    SIGNAL LED_E1: STD_LOGIC;
+    SIGNAL ASCEN_Planta_destino: INTEGER ;
+    SIGNAL ASCEN_Planta_actual: INTEGER;
     SIGNAL MOTOR: STD_LOGIC_VECTOR (1 downto 0);
 		
 begin     --------------------------------------------------------------------------------------------
@@ -32,52 +32,52 @@ begin     ----------------------------------------------------------------------
 
 SINCRONIZACION_RELOJ: PROCESS (clock,RST)
 	BEGIN  
-	  --  state <= S1;	  
+	  --  state <= E1;	  
 	  IF RST= '1' THEN
-	       state <= S1;
-	       DIS_DEST <= "001";
-	       DIS_ACT <= "001";  
-	       planta_destinoo <= 1;
-	       planta_actuall <= 1;
+	       state <= E1;
+	       DISPLAY_DESTINO <= "001";
+	       DISPLAY_ACTUAL <= "001";  
+	       ASCEN_Planta_destino <= 1;
+	       ASCEN_Planta_actual <= 1;
 	             
 		ELSIF (clock'event and clock='1') AND RST='0' THEN
-		planta_actuall<= to_integer(unsigned(planta_actual));  	   	     
-	    DIS_ACT <= STD_LOGIC_VECTOR(TO_UNSIGNED(planta_actuall, DIS_DEST'LENGTH));
+		ASCEN_Planta_actual<= to_integer(unsigned(ASCENSOR_PLANTA_ACTUAL));  	   	     
+	    DISPLAY_ACTUAL <= STD_LOGIC_VECTOR(TO_UNSIGNED(ASCEN_Planta_actual, DISPLAY_DESTINO'LENGTH));
 	    state <= next_state;
 	  IF MOTOR = "00" THEN
-	    planta_destinoo <= to_integer(unsigned(planta_destino));  
-	    DIS_DEST <= STD_LOGIC_VECTOR(TO_UNSIGNED(planta_destinoo, DIS_DEST'LENGTH)); 
+	    ASCEN_Planta_destino <= to_integer(unsigned(ASCENSOR_PLANTA_DESTINO));  
+	    DISPLAY_DESTINO <= STD_LOGIC_VECTOR(TO_UNSIGNED(ASCEN_Planta_destino, DISPLAY_DESTINO'LENGTH)); 
 	    END IF;
 	    END IF;
 END PROCESS;
 
 
-NEXT_STATE_DECODE: PROCESS (clock, state, planta_destinoo, planta_actuall)  
+NEXT_STATE_DECODE: PROCESS (clock, state, ASCEN_Planta_destino, ASCEN_Planta_actual)  
 
   BEGIN	
 	next_state <= state;    	     
      case state is
-     when S1 =>
-     IF (planta_destinoo-planta_actuall=0 ) THEN		--si estamos en la planta que queremos		
-		        next_state <= S1;
+     when E1 =>
+     IF (ASCEN_Planta_destino-ASCEN_Planta_actual=0 ) THEN		--si estamos en la planta que queremos		
+		        next_state <= E1;
    		        
       
-ELSIF (planta_destinoo-planta_actuall>0) THEN   --si estamos en planta mas abajo, subiremos
-				next_state <= S2;	
+ELSIF (ASCEN_Planta_destino-ASCEN_Planta_actual>0) THEN   --si estamos en planta mas abajo, subiremos
+				next_state <= E2;	
 
 
-ELSIF (planta_destinoo-planta_actuall<0) THEN
-				next_state <= S3;
+ELSIF (ASCEN_Planta_destino-ASCEN_Planta_actual<0) THEN
+				next_state <= E3;
 
 
 END IF;
-        when S2=>         
-       IF (planta_destinoo-planta_actuall=0) THEN		--si estamos en la planta que queremos		
-		        next_state <= S1;
+        when E2=>         
+       IF (ASCEN_Planta_destino-ASCEN_Planta_actual=0) THEN		--si estamos en la planta que queremos		
+		        next_state <= E1;
 		        END IF;   
-        when S3=> 
-         IF (planta_destinoo-planta_actuall=0) THEN		--si estamos en la planta que queremos	
-		        next_state <= S1;
+        when E3=> 
+         IF (ASCEN_Planta_destino-ASCEN_Planta_actual=0) THEN		--si estamos en la planta que queremos	
+		        next_state <= E1;
 
 		        END IF;
 END CASE;
@@ -87,17 +87,17 @@ END PROCESS;
 Estado_del_motor: PROCESS (clock, state )
 begin       
         case state is 
-        when S1=>
+        when E1=>
                 MOTOR <= "00";
                 motor_out <= "00";
                 LED0 <= '1';
                  LED_INDICADOR_DE_LLEGADA <= '1';
-        when S2 =>               
+        when E2 =>               
                  MOTOR <= "01";
                  motor_out <= "01";  
                  LED0 <= '0';
                   LED_INDICADOR_DE_LLEGADA <= '0';          
-         when S3 => 
+         when E3 => 
                  MOTOR <= "10";
                  motor_out <= "10"; 
                  LED0 <= '0';

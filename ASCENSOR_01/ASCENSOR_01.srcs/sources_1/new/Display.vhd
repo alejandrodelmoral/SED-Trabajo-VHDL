@@ -9,8 +9,8 @@ use UNISIM.VComponents.all;
 
 entity Display is
     Port ( clock : in STD_LOGIC;
-           display_selection : out STD_LOGIC_VECTOR (7 downto 0);
-           display_number : out STD_LOGIC_VECTOR (6 downto 0);
+           Display_destino : out STD_LOGIC_VECTOR (7 downto 0);
+           Display_actual : out STD_LOGIC_VECTOR (6 downto 0);
            planta_actual_last : in STD_LOGIC_VECTOR (6 downto 0);
            planta_destino_last : in STD_LOGIC_VECTOR (6 downto 0));
 end Display;
@@ -32,11 +32,11 @@ IF rising_edge (clock) THEN
  
  CASE contador is 
  
-        WHEN 0 => display_selection <="11111101";
-                  display_number <= planta_destino_last;
+        WHEN 0 => Display_destino <="11111101";
+                  Display_actual <= planta_destino_last;
  
-        WHEN 1 => display_selection <= "11111110";
-                  display_number <= planta_actual_last;
+        WHEN 1 => Display_destino <= "11111110";
+                  Display_actual <= planta_actual_last;
                   
                 
    END CASE;

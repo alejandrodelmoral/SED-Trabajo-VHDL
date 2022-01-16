@@ -90,7 +90,6 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Ascensor.vhd
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder1.vhd
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder2.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Decoder3.vhd
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Display.vhd
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/Motor.vhd
   C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_01/ASCENSOR_01.srcs/sources_1/new/divisor_frecuencia.vhd

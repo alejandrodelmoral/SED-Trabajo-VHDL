@@ -7,11 +7,13 @@ use UNISIM.VComponents.all;
 
 entity Decoder1 is
     Port ( clock : in STD_LOGIC;
-           boton1 : in STD_LOGIC;
-           boton2 : in STD_LOGIC;
-           boton3 : in STD_LOGIC;
-           boton4 : in STD_LOGIC;
-           planta_destino1 : out STD_LOGIC_VECTOR (2 DOWNTO 0));
+           Decodificador1_boton1 : in STD_LOGIC;
+           Decodificador1_boton2 : in STD_LOGIC;
+           Decodificador1_boton3 : in STD_LOGIC;
+           Decodificador1_boton4 : in STD_LOGIC;
+           Decodificador1_boton5 : in STD_LOGIC;
+           Decodificador1_boton6 : in STD_LOGIC;
+           Decodificador1_P_D_1 : out STD_LOGIC_VECTOR (2 DOWNTO 0));
 end Decoder1;
 
 architecture Behavioral of Decoder1 is
@@ -19,18 +21,24 @@ architecture Behavioral of Decoder1 is
 begin
 
 
-DECODIFICADOR1: PROCESS (clock, boton1, boton2, boton3, boton4)
+DECODIFICADOR1: PROCESS (clock, Decodificador1_boton1, Decodificador1_boton2, Decodificador1_boton3, Decodificador1_boton4)
 	BEGIN
 		IF clock'event and clock='1' THEN		
 		
-		IF boton1='1' THEN          
-		  planta_destino1 <= "001";
-		ELSIF boton2='1' THEN
-		  planta_destino1 <= "010";
-		ELSIF boton3='1' THEN
-		  planta_destino1 <= "011";
-		ELSIF boton4='1' THEN
-		  planta_destino1 <= "100";
+		IF Decodificador1_boton1='1' THEN          
+		  Decodificador1_P_D_1 <= "001";
+		ELSIF Decodificador1_boton2='1' THEN
+		  Decodificador1_P_D_1 <= "010";
+		ELSIF Decodificador1_boton3='1' THEN
+		  Decodificador1_P_D_1 <= "011";
+		ELSIF Decodificador1_boton4='1' THEN
+		  Decodificador1_P_D_1 <= "100";
+		ELSIF Decodificador1_boton5='1' THEN
+		  Decodificador1_P_D_1 <= "101";
+		ElSIF Decodificador1_boton6='1' THEN
+		  Decodificador1_P_D_1 <= "110";
+
+		  
 		END IF;
 		
 		END IF;     
