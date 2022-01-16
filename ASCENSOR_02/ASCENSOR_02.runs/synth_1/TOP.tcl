@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/synth_1/TOP.tcl"
+  variable script "C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/synth_1/TOP.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,33 +70,33 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/wt [current_project]
-set_property parent.project_path C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/wt [current_project]
+set_property parent.project_path C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/ip [current_project]
+set_property ip_output_repo c:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Contador.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/DOOR.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decoder3.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decodificador1.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decodificador2.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Display.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Divisor_frecuencia.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/FSM.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/MOTOR.vhd
-  C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/TOP.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Contador.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/DOOR.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decoder3.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decodificador1.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Decodificador2.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Display.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/Divisor_frecuencia.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/FSM.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/MOTOR.vhd
+  C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.srcs/sources_1/new/TOP.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -107,8 +107,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

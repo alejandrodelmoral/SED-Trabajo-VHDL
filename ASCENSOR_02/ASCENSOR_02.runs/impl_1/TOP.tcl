@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/impl_1/TOP.tcl"
+  variable script "C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/impl_1/TOP.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,7 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
@@ -130,15 +130,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.xpr [current_project]
-  set_property ip_output_repo C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/wt [current_project]
+  set_property parent.project_path C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.xpr [current_project]
+  set_property ip_output_repo C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/synth_1/TOP.dcp
+  add_files -quiet C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_02/ASCENSOR_02.runs/synth_1/TOP.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc
+  read_xdc C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/Nexys-4-DDR-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -295,34 +295,4 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi TOP.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force TOP.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force TOP}
-  catch {file copy -force TOP.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }
