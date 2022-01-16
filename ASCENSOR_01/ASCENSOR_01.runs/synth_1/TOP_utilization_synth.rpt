@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Dec 30 18:22:42 2021
-| Host         : LAPTOP-K9RA0OS9 running 64-bit major release  (build 9200)
+| Date         : Sun Jan 16 20:56:42 2022
+| Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
 | Design       : TOP
 | Device       : 7a100tcsg324-1

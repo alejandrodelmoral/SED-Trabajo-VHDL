@@ -1,45 +1,37 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
 use IEEE.NUMERIC_STD.ALL;
 
-library UNISIM;
-use UNISIM.VComponents.all;
-
 entity Display is
-    Port ( clock : in STD_LOGIC;
-           display_selection : out STD_LOGIC_VECTOR (7 downto 0);
-           display_number : out STD_LOGIC_VECTOR (6 downto 0);
-           planta_actual_last : in STD_LOGIC_VECTOR (6 downto 0);
-           planta_destino_last : in STD_LOGIC_VECTOR (6 downto 0));
+    port
+    (
+        clock               : in  std_logic ;
+        planta_actual_last  : in  std_logic_vector (6 downto 0);
+        planta_destino_last : in  std_logic_vector (6 downto 0);
+        display_selection   : out std_logic_vector (7 downto 0);
+        display_number      : out std_logic_vector (6 downto 0)
+    );
 end Display;
 
 architecture Behavioral of Display is
-
 begin
+    process (clock)
+        variable contador : integer range 0 to 1 := 0;
+    begin
+        if rising_edge (clock) then
+            if contador = 1 then
+                contador := 0;
+            else
+                contador := contador + 1;
+            end if;
+        end if;
 
-PROCESS (clock)
-VARIABLE contador: integer  range 0 to 1 :=0;
-BEGIN
-IF rising_edge (clock) THEN 
-    IF contador=1 THEN
-        contador:=0;
-    ELSE 
-    contador:=contador+1;
-   END IF;
- END IF;
- 
- CASE contador is 
- 
-        WHEN 0 => display_selection <="11111101";
-                  display_number <= planta_destino_last;
- 
-        WHEN 1 => display_selection <= "11111110";
-                  display_number <= planta_actual_last;
-                  
-                
-   END CASE;
-   END PROCESS;
-   
+        case contador is
+            when 0 => display_selection <= "11111101";
+                display_number <= planta_destino_last;
+
+            when 1 => display_selection <= "11111110";
+                display_number <= planta_actual_last;
+        end case;
+    end process;
 end Behavioral;
