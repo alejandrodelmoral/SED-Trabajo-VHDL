@@ -50,7 +50,7 @@ end component;
 component DIVISOR_FRECUENCIA_RELOJ is
     generic
     (
-        FREC : integer := 200000000
+        FREC : integer := 100000000
     );
     port
     (
