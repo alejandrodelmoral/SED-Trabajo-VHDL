@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity DIVISOR_FRECUENCIA_RELOJ is
     generic
     (
-        FREC : integer := 200000000
+        FREC : integer := 400000000
     );
     port
     (
