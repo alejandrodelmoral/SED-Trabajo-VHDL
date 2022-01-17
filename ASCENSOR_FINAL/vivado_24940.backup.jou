@@ -2,13 +2,22 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Jan 18 00:44:35 2022
-# Process ID: 16672
+# Start of session at: Mon Jan 17 20:11:08 2022
+# Process ID: 24940
 # Current directory: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4044 C:\Users\jacob\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_FINAL\ASCENSOR_FINAL.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3080 C:\Users\jacob\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_FINAL\ASCENSOR_FINAL.xpr
 # Log file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/vivado.log
 # Journal file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
