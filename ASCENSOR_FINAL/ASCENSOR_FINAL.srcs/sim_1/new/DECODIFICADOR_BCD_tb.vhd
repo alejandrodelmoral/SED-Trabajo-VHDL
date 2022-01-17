@@ -1,43 +1,54 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 17.01.2022 12:50:16
--- Design Name: 
--- Module Name: DECODIFICADOR_BCD_tb - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity DECODIFICADOR_BCD_tb is
 --  Port ( );
-end DECODIFICADOR_BCD_tb;
+end entity;
 
-architecture Behavioral of DECODIFICADOR_BCD_tb is
+architecture behavioral of DECODIFICADOR_BCD_tb is
+
+component DECODIFICADOR_BCD
+    port
+    (
+        CODIGO  : in  std_logic_vector (1 downto 0);
+        LED     : out std_logic_vector (6 downto 0);
+        DISPLAY : out std_logic_vector (7 downto 0)
+    );
+end component;
+
+    signal codigo  : std_logic_vector (1 downto 0) := "00";
+    signal led     : std_logic_vector (6 downto 0) := "0000000";
+    signal display : std_logic_vector (7 downto 0) := "00000000";
+    constant K     : time := 10 ns;
 
 begin
 
+    uut: DECODIFICADOR_BCD port map
+    (
+        CODIGO  => code,
+        LED     => led,
+        DISPLAY => display
+    );
+    
+    process
+    begin
+        wait for K;
+        codigo <= "00";
+        wait for K;
+        codigo <= "01";
+        wait for K;
+        codigo <= "10";
+        wait for K;
+        codigo <= "11";
+    end process;
+
+    process
+    begin
+        wait for 10 * K;
+  
+        assert false
+        report "Simulacion finalizada."
+        severity failure;
+    end process;
 
 end Behavioral;

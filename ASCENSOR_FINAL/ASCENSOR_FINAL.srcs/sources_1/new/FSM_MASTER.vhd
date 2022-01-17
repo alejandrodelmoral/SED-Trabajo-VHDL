@@ -4,13 +4,13 @@ use ieee.std_logic_1164.all;
 entity FSM_MASTER is
     port
     (
-        CLK : in std_logic;
-        RESET : in std_logic;
-        DESTINO : in std_logic_vector (1 downto 0);
+        CLK         : in  std_logic;
+        RESET       : in  std_logic;
+        DESTINO     : in  std_logic_vector (1 downto 0);
         DESTINO_OUT : out std_logic_vector (1 downto 0);
-        PUERTA: out std_logic_vector (1 downto 0);
-        MOTOR: out std_logic_vector(1 downto 0);
-        FLAG_MOTOR: out std_logic
+        PUERTA      : out std_logic_vector (1 downto 0);
+        MOTOR       : out std_logic_vector (1 downto 0);
+        FLAG_MOTOR  : out std_logic
     );
 end entity;
 
@@ -50,33 +50,33 @@ begin
           when S0 =>
               if (DESTINO = "00") then
                   SIGUIENTE_STATE <= S0;
-                  PUERTA<="10";
-                  MOTOR<="00";
-                  FLAG_MOTOR<='0';
+                  PUERTA <= "10";
+                  MOTOR <= "00";
+                  FLAG_MOTOR <= '0';
               elsif (DESTINO /= "00") then
-                  PUERTA<="01";
-                  MOTOR<="01";
+                  PUERTA <= "01";
+                  MOTOR <= "01";
                   SIGUIENTE_STATE <= S1;
                   PISO_TEMP <= DESTINO;
-                  FLAG_MOTOR<='1';
+                  FLAG_MOTOR <= '1';
               end if;
                       
           when S1 =>
               if (PISO_TEMP /= "01") then 
                  if(PISO_TEMP = "10") or (PISO_TEMP = "11") then
                      SIGUIENTE_STATE <= S2;
-                     MOTOR<="01";
+                     MOTOR <= "01";
                  elsif(PISO_TEMP = "00") then
                      SIGUIENTE_STATE <= S0;
-                     MOTOR<="10";
+                     MOTOR <= "10";
                  end if;
-                 PUERTA<="01";
-                 FLAG_MOTOR<='1';
+                 PUERTA <= "01";
+                 FLAG_MOTOR <= '1';
               else 
                  if (DESTINO = "00") then
                      SIGUIENTE_STATE <= S0;
-                     PUERTA<="01";
-                     MOTOR<="10";
+                     PUERTA <= "01";
+                     MOTOR <= "10";
                      PISO_TEMP <= "00";
                      FLAG_MOTOR<='1';
                  elsif (DESTINO = "01") then
@@ -84,19 +84,19 @@ begin
                      PUERTA<="10";
                      MOTOR<="00";
                      PISO_TEMP <= "01";
-                     FLAG_MOTOR<='0';
+                     FLAG_MOTOR <= '0';
                  elsif (DESTINO = "10") then
                      SIGUIENTE_STATE <= S2;
-                     PUERTA<="01";
-                     MOTOR<="01";
+                     PUERTA <= "01";
+                     MOTOR <= "01";
                      PISO_TEMP <= "10";
-                     FLAG_MOTOR<='1';
+                     FLAG_MOTOR <= '1';
                  elsif (DESTINO = "11") then
                      SIGUIENTE_STATE <= S2;
                      PISO_TEMP <= DESTINO;
-                     PUERTA<="01";
-                     MOTOR<="01";
-                     FLAG_MOTOR<='1';
+                     PUERTA <= "01";
+                     MOTOR <= "01";
+                     FLAG_MOTOR <= '1';
                  end if;
              end if;
                      
@@ -107,50 +107,50 @@ begin
                    MOTOR<="10";
                elsif(PISO_TEMP = "11") then
                     SIGUIENTE_STATE <= S3;
-                    MOTOR<="01";
+                    MOTOR <= "01";
                end if;
-               PUERTA<="01";
-               FLAG_MOTOR<='1';
+               PUERTA <= "01";
+               FLAG_MOTOR <= '1';
              else 
                if (DESTINO = "00") then
                     SIGUIENTE_STATE <= S1;
                     PISO_TEMP <= DESTINO;
-                    PUERTA<="01";
-                    MOTOR<="10";
-                    FLAG_MOTOR<='1';
+                    PUERTA <= "01";
+                    MOTOR <= "10";
+                    FLAG_MOTOR <= '1';
                elsif (DESTINO = "01") then
                     SIGUIENTE_STATE <= S1;
-                    PUERTA<="01";
-                    MOTOR<="10";
+                    PUERTA <= "01";
+                    MOTOR <= "10";
                     PISO_TEMP <= "01";
-                    FLAG_MOTOR<='1';
+                    FLAG_MOTOR <= '1';
                elsif (DESTINO = "10") then
                     SIGUIENTE_STATE <= S2;
-                    PUERTA<="10";
-                    MOTOR<="00";
+                    PUERTA <= "10";
+                    MOTOR <= "00";
                     PISO_TEMP <= "10";
-                    FLAG_MOTOR<='0';
+                    FLAG_MOTOR <= '0';
                elsif (DESTINO = "11") then
                     SIGUIENTE_STATE <= S3;
-                    PUERTA<="01";
-                    MOTOR<="01";
+                    PUERTA <= "01";
+                    MOTOR <= "01";
                     PISO_TEMP <= "11";
-                    FLAG_MOTOR<='1';
+                    FLAG_MOTOR <= '1';
                end if;
             end if;
                      
          when S3 =>
             if (DESTINO = "11") then
                 SIGUIENTE_STATE <= S3;
-                PUERTA<="10";
-                MOTOR<="00";
-                FLAG_MOTOR<='0';
+                PUERTA <= "10";
+                MOTOR <= "00";
+                FLAG_MOTOR <= '0';
             elsif (DESTINO /= "11") then
-                PUERTA<="01";
-                MOTOR<="10";
+                PUERTA <= "01";
+                MOTOR <= "10";
                 SIGUIENTE_STATE <= S2;
                 PISO_TEMP <= DESTINO;
-                FLAG_MOTOR<='1';
+                FLAG_MOTOR <= '1';
             end if;           
             
         end case;
