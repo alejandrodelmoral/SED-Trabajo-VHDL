@@ -45,20 +45,51 @@ begin
     end process;
     
     STATE_NEXT: process (STATE, SWITCH)
-    begin
-        SIGUIENTE_STATE <= STATE;
-        case STATE is
-            when others =>
-                case SWITCH is
-                    when "0001" =>
-                        SIGUIENTE_STATE <= S0;
-                    when "0010" => 
-                        SIGUIENTE_STATE <= S1;
-                    when "0100" => 
-                        SIGUIENTE_STATE <= S2;
-                    when "1000" => 
-                        SIGUIENTE_STATE <= S3;
-                end case;
+        begin
+        SIGUIENTE_STATE <= state;
+        case (state) is
+            
+            when S0 =>
+                if(SWITCH = "0001") then 
+                    SIGUIENTE_STATE <= S0;
+                elsif(SWITCH = "0010") then
+                    SIGUIENTE_STATE <= S1;
+                elsif(SWITCH = "0100") then
+                    SIGUIENTE_STATE <= S2;
+                elsif(SWITCH = "1000") then
+                    SIGUIENTE_STATE <= S3;
+                end if;
+                
+            when S1 =>
+                if(SWITCH = "0001") then 
+                    SIGUIENTE_STATE <= S0;
+                elsif(SWITCH = "0010") then
+                    SIGUIENTE_STATE <= S1;
+                elsif(SWITCH = "0100") then
+                    SIGUIENTE_STATE <= S2;
+                elsif(SWITCH = "1000") then
+                    SIGUIENTE_STATE <= S3;
+                end if;
+            when S2 =>
+                if(SWITCH = "0001") then 
+                    SIGUIENTE_STATE <= S0;
+                elsif(SWITCH = "0010") then
+                    SIGUIENTE_STATE <= S1;
+                elsif(SWITCH = "0100") then
+                    SIGUIENTE_STATE <= S2;
+                elsif(SWITCH = "1000") then
+                    SIGUIENTE_STATE <= S3;
+                end if;
+         when S3 =>
+                if(SWITCH = "0001") then 
+                    SIGUIENTE_STATE <= S0;
+                elsif(SWITCH = "0010") then
+                    SIGUIENTE_STATE <= S1;
+                elsif(SWITCH = "0100") then
+                    SIGUIENTE_STATE <= S2;
+                elsif(SWITCH = "1000") then
+                    SIGUIENTE_STATE <= S3;
+                end if;
         end case;
     end process;
 end architecture behavioral;
