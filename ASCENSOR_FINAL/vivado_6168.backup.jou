@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jan 17 11:12:08 2022
+# Process ID: 6168
+# Current directory: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5616 C:\Users\Zheng\Documents\GitHub\SED-Trabajo-VHDL\ASCENSOR_FINAL\ASCENSOR_FINAL.xpr
+# Log file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/vivado.log
+# Journal file: C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Zheng/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.xpr
+update_compile_order -fileset sources_1
