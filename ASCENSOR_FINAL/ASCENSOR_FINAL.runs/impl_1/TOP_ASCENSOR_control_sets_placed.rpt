@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Mon Jan 17 12:55:42 2022
+| Date         : Mon Jan 17 23:41:28 2022
 | Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_ASCENSOR_control_sets_placed.rpt
 | Design       : TOP_ASCENSOR
@@ -73,9 +73,9 @@ Table of Contents
 +-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
 |            Clock Signal           | Enable Signal |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
+|  inst_Maquina_Estado2/CLK         |               | inst_Maquina_Estado2/RESET |                2 |              2 |         1.00 |
 |  inst_Maquina_Estado/PISO_TEMP__0 |               |                            |                1 |              2 |         2.00 |
 |  CLK_IBUF_BUFG                    |               |                            |                1 |              2 |         2.00 |
-|  inst_Maquina_Estado2/CLK         |               | inst_Maquina_Estado2/RESET |                2 |              2 |         1.00 |
 |  CLK_IBUF_BUFG                    |               | inst_Maquina_Estado2/RESET |               14 |             33 |         2.36 |
 +-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
 
