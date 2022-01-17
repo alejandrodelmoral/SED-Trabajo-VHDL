@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jan 17 12:32:01 2022
+# Process ID: 23616
+# Current directory: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.runs/synth_1
+# Command line: vivado.exe -log TOP_ASCENSOR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_ASCENSOR.tcl
+# Log file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.runs/synth_1/TOP_ASCENSOR.vds
+# Journal file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_ASCENSOR.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1142.957 ; gain = 7.242
+Command: synth_design -top TOP_ASCENSOR -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24764

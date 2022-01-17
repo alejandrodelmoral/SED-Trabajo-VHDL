@@ -81,7 +81,7 @@ begin
         flag_motor => mov
      );
 
-    FSM_ESCLAVO port map
+    inst_Maquina_Estado1: FSM_ESCLAVO port map
     (
         clk => clk,
         reset => reset,
@@ -90,17 +90,17 @@ begin
         FLAG_MOTOR => mov
       );
 
-    DIVISOR_FRECUENCIA_RELOJ port map
+    inst_Maquina_Estado2: DIVISOR_FRECUENCIA_RELOJ port map
     (
         CLK_100MHz => CLK,
         RESET => RESET,
         CLK_100Hz => clk_sinc
     );
 
-    DECODIFICADOR_BCD port map
+    inst_Maquina_Estado3: DECODIFICADOR_BCD port map
     (
         LED => DISPLAY_NUMERO,
         CODIGO => piso_actual,
         DISPLAY => DISPLAY_SELECT
     );
-end architecture strusctural;
+end architecture structural;

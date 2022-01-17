@@ -4,10 +4,10 @@ use ieee.std_logic_1164.all;
 entity FSM_ESCLAVO is
     port
     (
-        CLK        : in  std_logic;
-        RESET      : in  std_logic;
-        FLAG_MOTOR : in  std_logic := '0';
-        SWITCH     : in  std_logic_vector(3 downto 0);
+        CLK        : in  std_logic;                 
+        RESET      : in  std_logic;                         
+        FLAG_MOTOR : in  std_logic := '0';                  
+        SWITCH     : in  std_logic_vector(3 downto 0);      -- Vectores Switch
         DESTINO    : out std_logic_vector(1 downto 0)
     );
 end entity;
