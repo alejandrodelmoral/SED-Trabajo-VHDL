@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan 16 21:22:43 2022
+| Date         : Mon Jan 17 00:47:56 2022
 | Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
 | Design       : TOP
@@ -73,18 +73,18 @@ Table of Contents
 +-------------------+-----------------------------------------+--------------------------------------+------------------+----------------+--------------+
 |    Clock Signal   |              Enable Signal              |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------+-----------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  C_D_1Hz/clk_sig2 |                                         |                                      |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | Inst_Ascensor/motor_out_reg[0]_inv_2    | Inst_Ascensor/motor_out_reg[0]_inv_3 |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | Inst_Ascensor/motor_out_reg[0]_inv_1[0] | Inst_Ascensor/motor_out_reg[1]_0     |                1 |              1 |         1.00 |
-|  C_D_1Hz/clk_sig2 |                                         |                                      |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG    | Dec2//i__n_0                            |                                      |                1 |              5 |         5.00 |
 |  clk_IBUF_BUFG    | Dec1/E[0]                               |                                      |                1 |              5 |         5.00 |
 |  clk_sig_BUFG     |                                         |                                      |                6 |              6 |         1.00 |
 |  clk_IBUF_BUFG    |                                         |                                      |               10 |             19 |         1.90 |
-|  clk_IBUF_BUFG    |                                         | C_D_1Hz/clk_sig2_1                   |                8 |             31 |         3.88 |
-|  clk_IBUF_BUFG    |                                         | C_D_1Hz/clk_sig_0                    |                8 |             31 |         3.88 |
-|  clk_sig_BUFG     | Inst_Ascensor/E3                        | cont/SEC3.contador3[31]_i_1_n_0      |                8 |             31 |         3.88 |
 |  clk_sig_BUFG     | Inst_Ascensor/E1                        | cont/SEC1.contador1[31]_i_1_n_0      |                8 |             31 |         3.88 |
 |  clk_sig_BUFG     | Inst_Ascensor/E2                        | cont/SEC2.contador2[31]_i_1_n_0      |                8 |             31 |         3.88 |
+|  clk_sig_BUFG     | Inst_Ascensor/E3                        | cont/SEC3.contador3[31]_i_1_n_0      |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG    |                                         | C_D_1Hz/clk_sig2_1                   |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG    |                                         | C_D_1Hz/clk_sig_0                    |                8 |             31 |         3.88 |
 |  clk_IBUF_BUFG    | Inst_Ascensor/P_A                       |                                      |                8 |             32 |         4.00 |
 +-------------------+-----------------------------------------+--------------------------------------+------------------+----------------+--------------+
 

@@ -1,34 +1,30 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
 use IEEE.NUMERIC_STD.ALL;
-library UNISIM;
-use UNISIM.VComponents.all;
 
 entity Decoder3 is
-    Port ( clock : in STD_LOGIC;
-           Decoder_P_D_3 : in STD_LOGIC_VECTOR (2 DOWNTO 0);
-           Decoder_Pin_Display_3 : out STD_LOGIC_VECTOR (6 downto 0));
+    port
+    (
+        clock                 : in  std_logic;                          -- Reloj
+        Decoder_P_D_3         : in  std_logic_vector (2 downto 0);      -- ?
+        Decoder_Pin_Display_3 : out std_logic_vector (6 downto 0)       -- ?
+    );
 end Decoder3;
 
 architecture Behavioral of Decoder3 is
-
 begin
-
-DECODIFICADOR3: PROCESS (clock, Decoder_P_D_3)
-		BEGIN
-		   IF rising_edge (clock) THEN		   
-			
-			IF 	Decoder_P_D_3 = "001" THEN
-				Decoder_Pin_Display_3 <= "1001111";			  
-			ELSIF 	Decoder_P_D_3 = "010" THEN    --SUSTITUIR CONSTRUCCION WHEN/ELSE POR CONSTRUCCION IF THEN PORQUE SOLO LA VERSION VHDL2008 PERMITE LA CONSTRUCCION WHEN
-				Decoder_Pin_Display_3 <= "0010010";
-			ELSIF 	Decoder_P_D_3 = "011" THEN
-				Decoder_Pin_Display_3 <= "0000110";
-			ELSIF 	Decoder_P_D_3 = "100" THEN
-				Decoder_Pin_Display_3 <= "1001100";		
-				END IF;			  
-			END IF;       END PROCESS;
-
-end Behavioral;
+    DECODIFICADOR3: process (clock, Decoder_P_D_3)  
+    begin
+        if rising_edge (clock) then     -- Si hay un flanco ascendente de reloj (Sincrono)
+            if Decoder_P_D_3 = "001" then
+                Decoder_Pin_Display_3 <= "1001111";
+            elsif Decoder_P_D_3 = "010" then
+                Decoder_Pin_Display_3 <= "0010010";
+            elsif Decoder_P_D_3 = "011" then
+                Decoder_Pin_Display_3 <= "0000110";
+            elsif Decoder_P_D_3 = "100" then
+                Decoder_Pin_Display_3 <= "1001100";
+            end if;
+        end if;
+    end process;
+end architecture Behavioral;
