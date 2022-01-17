@@ -1,16 +1,17 @@
 library ieee;
-use ieee.std.logic_1164.all;
-
+use ieee.std_logic_1164.all;
 
 entity FSM_MASTER is
-    port ( CLK : in std_logic;
-           RESET : in std_logic;
-           DESTINO : in std_logic_vector (1 downto 0);
-           DESTINO_OUT : out std_logic_vector (1 downto 0);
-           PUERTA: out std_logic_vector (1 downto 0);
-           MOTOR: out std_logic_vector(1 downto 0);
-           FLAG_MOTOR: out std_logic
-         );
+    port
+    (
+        CLK : in std_logic;
+        RESET : in std_logic;
+        DESTINO : in std_logic_vector (1 downto 0);
+        DESTINO_OUT : out std_logic_vector (1 downto 0);
+        PUERTA: out std_logic_vector (1 downto 0);
+        MOTOR: out std_logic_vector(1 downto 0);
+        FLAG_MOTOR: out std_logic
+    );
 end entity;
 
 architecture behavioral of FSM_MASTER is
