@@ -9,9 +9,9 @@ entity DIVISOR_FRECUENCIA_RELOJ is
     );
     port
     (
-        CLK_100MHz : in std_logic;
-        RESET : in std_logic;
-        CLK_100Hz : out std_logic
+        CLK_100MHz : in  std_logic;
+        RESET      : in  std_logic;
+        CLK_100Hz  : out std_logic
     ); 
 end entity;
 
