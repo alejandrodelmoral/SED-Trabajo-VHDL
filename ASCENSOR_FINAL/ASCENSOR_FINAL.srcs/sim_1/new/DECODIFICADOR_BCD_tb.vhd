@@ -1,11 +1,12 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity DECODIFICADOR_BCD_tb is
 --  Port ( );
-end DECODIFICADOR_BCD_tb;
+end entity;
 
-architecture Behavioral of DECODIFICADOR_BCD_tb is
+architecture behavioral of DECODIFICADOR_BCD_tb is
+
 component DECODIFICADOR_BCD
     port
     (
@@ -21,6 +22,7 @@ end component;
     constant K     : time := 10 ns;
 
 begin
+
     uut: DECODIFICADOR_BCD port map
     (
         CODIGO  => code,
@@ -48,4 +50,5 @@ begin
         report "Simulacion finalizada."
         severity failure;
     end process;
+
 end Behavioral;
