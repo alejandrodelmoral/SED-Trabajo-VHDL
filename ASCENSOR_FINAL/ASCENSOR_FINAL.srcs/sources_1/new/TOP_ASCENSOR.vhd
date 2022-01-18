@@ -67,37 +67,41 @@ component DECODIFICADOR_BCD is
 end component;
       
 begin
-    inst_Maquina_Estado: FSM_MASTER port map
-    (
-        CLK         => clk_sinc,
-        RESET       => RESET,
-        DESTINO     => piso_d,
-        DESTINO_OUT => piso_actual,
-        PUERTA      => PUERTA_ABIERTA,
-        MOTOR       => MOTOR_PUERTA,
-        FLAG_MOTOR  => motor
-    );
+    inst_FSM_MASTER: FSM_MASTER
+        port map
+        (
+            CLK         => clk_sinc,
+            RESET       => RESET,
+            DESTINO     => piso_d,
+            DESTINO_OUT => piso_actual,
+            PUERTA      => PUERTA_ABIERTA,
+            MOTOR       => MOTOR_PUERTA,
+            FLAG_MOTOR  => motor
+        );
 
-    inst_Maquina_Estado1: FSM_ESCLAVO port map
-    (
-        CLK        => CLK,
-        RESET      => RESET,
-        SWITCH     => PISO_DESTINO,
-        DESTINO    => piso_d,
-        FLAG_MOTOR => motor
-    );
+    inst_FSM_ESCLAVO: FSM_ESCLAVO
+        port map
+        (
+            CLK        => CLK,
+            RESET      => RESET,
+            SWITCH     => PISO_DESTINO,
+            DESTINO    => piso_d,
+            FLAG_MOTOR => motor
+        );
 
-    inst_Maquina_Estado2: DIVISOR_FRECUENCIA_RELOJ port map
-    (
-        CLK_100MHz => CLK,
-        RESET      => RESET,
-        CLK_100Hz  => clk_sinc
-    );
+    inst_DIVISOR_FRECUENCIA_RELOJ: DIVISOR_FRECUENCIA_RELOJ
+        port map
+        (
+            CLK_100MHz => CLK,
+            RESET      => RESET,
+            CLK_100Hz  => clk_sinc
+        );
 
-    inst_Maquina_Estado3: DECODIFICADOR_BCD port map
-    (
-        LED     => DISPLAY_NUMERO,
-        CODIGO  => piso_actual,
-        DISPLAY => DISPLAY_SELECT
-    );
+    inst_DECODIFICADOR_BCD: DECODIFICADOR_BCD
+        port map
+        (
+            LED     => DISPLAY_NUMERO,
+            CODIGO  => piso_actual,
+            DISPLAY => DISPLAY_SELECT
+        );
 end architecture structural;
