@@ -16,7 +16,7 @@ end entity;
 
 architecture structural of TOP_ASCENSOR is
     signal clk_sinc    : std_logic;
-    signal piso_actual : std_logic_vector(1 downto 0);
+    signal piso_actual : std_logic_vector (1 downto 0);
     signal piso_d      : std_logic_vector (1 downto 0);
     signal motor       : std_logic;
 
@@ -28,7 +28,7 @@ component FSM_MASTER is
         DESTINO     : in  std_logic_vector (1 downto 0);
         DESTINO_OUT : out std_logic_vector (1 downto 0);
         PUERTA      : out std_logic_vector (1 downto 0);
-        MOTOR       : out std_logic_vector(1 downto 0);
+        MOTOR       : out std_logic_vector (1 downto 0);
         FLAG_MOTOR  : out std_logic
     );
 end component;
@@ -39,8 +39,8 @@ component FSM_ESCLAVO is
         CLK        : in  std_logic;
         RESET      : in  std_logic;
         FLAG_MOTOR : in  std_logic := '0';
-        SWITCH     : in  std_logic_vector(3 downto 0);
-        DESTINO    : out std_logic_vector(1 downto 0)
+        SWITCH     : in  std_logic_vector (3 downto 0);
+        DESTINO    : out std_logic_vector (1 downto 0)
     );
 end component;
           

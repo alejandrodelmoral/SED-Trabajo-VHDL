@@ -7,8 +7,8 @@ entity FSM_ESCLAVO is
         CLK        : in  std_logic;                         -- Reloj       
         RESET      : in  std_logic;                         -- Reset
         FLAG_MOTOR : in  std_logic := '0';                  -- Flag del motor, marca el comienzo y final del ascensor
-        SWITCH     : in  std_logic_vector(3 downto 0);      -- Vector de Switch
-        DESTINO    : out std_logic_vector(1 downto 0)       -- Planta destino
+        SWITCH     : in  std_logic_vector (3 downto 0);     -- Vector de Switch
+        DESTINO    : out std_logic_vector (1 downto 0)      -- Planta destino
     );
 end entity;
 

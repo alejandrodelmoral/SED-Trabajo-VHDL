@@ -12,7 +12,7 @@ end entity;
 
 architecture behavioral of DECODIFICADOR_BCD is
 begin
-    process(CODIGO)
+    process (CODIGO)
     begin
         case CODIGO is
             when "00"   => 
