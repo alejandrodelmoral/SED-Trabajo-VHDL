@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Jan 17 21:26:43 2022
-# Process ID: 21032
+# Start of session at: Tue Jan 18 01:00:03 2022
+# Process ID: 18952
 # Current directory: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.runs/synth_1
 # Command line: vivado.exe -log TOP_ASCENSOR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_ASCENSOR.tcl
 # Log file: C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.runs/synth_1/TOP_ASCENSOR.vds

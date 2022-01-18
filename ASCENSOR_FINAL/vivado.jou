@@ -12,3 +12,6 @@
 start_gui
 open_project C:/Users/jacob/Documents/GitHub/SED-Trabajo-VHDL/ASCENSOR_FINAL/ASCENSOR_FINAL.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
