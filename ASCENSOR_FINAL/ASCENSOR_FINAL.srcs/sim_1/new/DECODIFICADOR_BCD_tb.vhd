@@ -51,4 +51,4 @@ begin
         severity failure;
     end process;
 
-end Behavioral;
+end architecture behavioral;
