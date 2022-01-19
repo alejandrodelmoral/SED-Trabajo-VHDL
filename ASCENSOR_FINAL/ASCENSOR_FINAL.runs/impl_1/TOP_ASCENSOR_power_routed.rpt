@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Tue Jan 18 01:14:23 2022
+| Date             : Wed Jan 19 10:09:33 2022
 | Host             : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_ASCENSOR_power_routed.rpt -pb TOP_ASCENSOR_power_summary_routed.pb -rpx TOP_ASCENSOR_power_routed.rpx
 | Design           : TOP_ASCENSOR
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 38.871 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 38.909 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 38.074                           |
+| Dynamic (W)              | 38.112                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.305 |      117 |       --- |             --- |
-|   LUT as Logic |     0.261 |       55 |     63400 |            0.09 |
+| Slice Logic    |     0.311 |      117 |       --- |             --- |
+|   LUT as Logic |     0.268 |       55 |     63400 |            0.09 |
 |   CARRY4       |     0.019 |        8 |     15850 |            0.05 |
 |   Register     |     0.019 |       39 |    126800 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |     0.587 |      108 |       --- |             --- |
-| I/O            |    37.182 |       25 |       210 |           11.90 |
+| Signals        |     0.601 |      107 |       --- |             --- |
+| I/O            |    37.200 |       25 |       210 |           11.90 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    38.871 |          |           |                 |
+| Total          |    38.909 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.475 |       0.912 |      0.563 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.495 |       0.932 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     1.455 |       1.362 |      0.093 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |    10.522 |      10.518 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |    10.527 |      10.523 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,13 +135,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------------+-----------+
-| Name                   | Power (W) |
-+------------------------+-----------+
-| TOP_ASCENSOR           |    38.074 |
-|   inst_Maquina_Estado  |     0.496 |
-|   inst_Maquina_Estado1 |     0.052 |
-|   inst_Maquina_Estado2 |     0.316 |
-+------------------------+-----------+
++---------------------------------+-----------+
+| Name                            | Power (W) |
++---------------------------------+-----------+
+| TOP_ASCENSOR                    |    38.112 |
+|   inst_DIVISOR_FRECUENCIA_RELOJ |     0.331 |
+|   inst_FSM_ESCLAVO              |     0.048 |
+|   inst_FSM_MASTER               |     0.503 |
++---------------------------------+-----------+
 
 

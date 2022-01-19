@@ -25,7 +25,7 @@ begin
 
     uut: DECODIFICADOR_BCD port map
     (
-        CODIGO  => code,
+        CODIGO  => codigo,
         LED     => led,
         DISPLAY => display
     );

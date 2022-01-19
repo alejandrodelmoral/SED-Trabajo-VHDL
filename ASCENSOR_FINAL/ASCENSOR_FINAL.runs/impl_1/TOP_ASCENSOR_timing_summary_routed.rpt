@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Tue Jan 18 01:14:23 2022
+| Date         : Wed Jan 19 10:09:33 2022
 | Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file TOP_ASCENSOR_timing_summary_routed.rpt -pb TOP_ASCENSOR_timing_summary_routed.pb -rpx TOP_ASCENSOR_timing_summary_routed.rpx -warn_on_violation
 | Design       : TOP_ASCENSOR
@@ -69,15 +69,15 @@ Table of Contents
 -------------------------
  There are 35 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: inst_Maquina_Estado/FSM_sequential_STATE_reg[0]/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: inst_DIVISOR_FRECUENCIA_RELOJ/CLK_TEMP_reg/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: inst_Maquina_Estado/FSM_sequential_STATE_reg[1]/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: inst_FSM_ESCLAVO/STATE_reg[0]/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: inst_Maquina_Estado1/STATE_reg[0]/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: inst_FSM_ESCLAVO/STATE_reg[1]/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: inst_Maquina_Estado1/STATE_reg[1]/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: inst_FSM_MASTER/FSM_sequential_STATE_reg[0]/Q (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: inst_Maquina_Estado2/CLK_TEMP_reg/Q (HIGH)
+ There are 2 register/latch pins with no clock driven by root clock pin: inst_FSM_MASTER/FSM_sequential_STATE_reg[1]/Q (HIGH)
 
 
 2. checking constant_clock (0)

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Tue Jan 18 01:13:57 2022
+| Date         : Wed Jan 19 10:09:06 2022
 | Host         : LAPTOP-LQEDQ70E running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_ASCENSOR_control_sets_placed.rpt
 | Design       : TOP_ASCENSOR
@@ -59,7 +59,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               4 |            2 |
-| No           | No                    | Yes                    |              35 |           16 |
+| No           | No                    | Yes                    |              35 |           13 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -70,13 +70,13 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
-|            Clock Signal           | Enable Signal |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
-|  inst_Maquina_Estado/PISO_TEMP__0 |               |                            |                1 |              2 |         2.00 |
-|  CLK_IBUF_BUFG                    |               |                            |                1 |              2 |         2.00 |
-|  inst_Maquina_Estado2/CLK         |               | inst_Maquina_Estado2/RESET |                2 |              2 |         1.00 |
-|  CLK_IBUF_BUFG                    |               | inst_Maquina_Estado2/RESET |               14 |             33 |         2.36 |
-+-----------------------------------+---------------+----------------------------+------------------+----------------+--------------+
++------------------------------------+---------------+-------------------------------------+------------------+----------------+--------------+
+|            Clock Signal            | Enable Signal |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+---------------+-------------------------------------+------------------+----------------+--------------+
+|  inst_DIVISOR_FRECUENCIA_RELOJ/CLK |               | inst_DIVISOR_FRECUENCIA_RELOJ/RESET |                1 |              2 |         2.00 |
+|  inst_FSM_MASTER/PISO_TEMP__0      |               |                                     |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG                     |               |                                     |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG                     |               | inst_DIVISOR_FRECUENCIA_RELOJ/RESET |               12 |             33 |         2.75 |
++------------------------------------+---------------+-------------------------------------+------------------+----------------+--------------+
 
 
